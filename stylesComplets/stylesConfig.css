@@ -19,12 +19,9 @@ body{
     background-color: var(--gb-principale);
 }
 :root{
-    /* --color-text:#fbfbfc; */
-    --color-text:#3B3C36;
-    /* --gb-principale:#5b6c80; */
-    --gb-principale:#ffff;
-    /* --color-btn:#8894a2; */
-    --color-btn: #2f3d4a;
+    --color-text:#fbfbfc;
+    --gb-principale:#5b6c80;
+    --color-btn:#8894a2;
     --gb-primaire:#727f92;
     --gb-secondaire:#798697;
     --jaune:#b6c755;
