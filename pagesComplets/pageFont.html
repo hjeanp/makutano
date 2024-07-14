@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" async="async" src="https://platform-api.sharethis.com/js/sharethis.js#property=VOTRE_ID_DE_PROPRIÉTÉ&product=sop" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../stylesComplets/stylesConfig.css">
+    <link rel="stylesheet" href="../stylesComplets/styles.css">
+    <title>makutano_Messagerie</title>
+</head>
+<style>
+    .con.flex{
+        width: 100%;
+        max-width: 60%;
+        height: 80vh;
+        justify-content: space-between;
+        border-radius: 3px;
+        background-color: var(--gb-popop-principale);
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    .con.flex::-webkit-scrollbar-thumb{
+        display: none;
+    }
+</style>
+<body>
+    <div class="containerLocationPopop">
+       <div class="con flex">
+        <div class="locationPopop flex">
+            <div class="contenuImage flex">
+              <p>images/videos</p>
+              <div class="defilment"></div>
+              <div class="defilment" onclick="defilement(event)"></div>
+            </div>
+              <div class="contenuDetail flex">
+                <div class="DetailPartie flex" style="justify-content: right;align-items: end;">
+                  <svg style="width: 30px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fbfbfc" class="w-6 h-6">
+                    <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z" clip-rule="evenodd" />
+                 </svg>
+                </div>
+                <div class="DetailPartie flex">
+                  <h4>Adresse</h4>
+                  <h4 style="color: var(--noire); font-weight: 500;">kamenge</h4>
+                </div>
+                <div class="DetailPartie flex">
+                  <h4>Prix</h4>
+                  <h4 style="color: var(--noire); font-weight: 500;">200$ USD par mois</h4>
+                </div>
+                <div class="DetailPartie flex">
+                  <h4>Categorie</h4>
+                  <h4 style="color: var(--noire); font-weight: 500;">3 chambres</h4>
+                </div>
+                <div class="DetailPartiePlus">
+                  <h4>j'ai une maison de 3 chambres bouble salon,trois douches et toillettes, double veranda,en cloture meme,avec du courage et de l'eau stable</h4>
+                </div>
+                <div class="DetailInfo flex" style="background-color: var(--color-contour-secondaire);">
+                  <input type="text" name="" id="" value="la maison est-elle disponible?">
+                  <svg id="voice1" style="width: 25px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fbfbfc" class="w-6 h-6">
+                      <path d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z" />
+                  </svg>
+                </div>
+                <div class="DetailInfo flex">
+                  <svg style="width: 23px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fbfbfc" class="w-6 h-6">
+                      <path fill-rule="evenodd" d="M4.804 21.644A6.707 6.707 0 006 21.75a6.721 6.721 0 003.583-1.029c.774.182 1.584.279 2.417.279 5.322 0 9.75-3.97 9.75-9 0-5.03-4.428-9-9.75-9s-9.75 3.97-9.75 9c0 2.409 1.025 4.587 2.674 6.192.232.226.277.428.254.543a3.73 3.73 0 01-.814 1.686.75.75 0 00.44 1.223zM8.25 10.875a1.125 1.125 0 100 2.25 1.125 1.125 0 000-2.25zM10.875 12a1.125 1.125 0 112.25 0 1.125 1.125 0 01-2.25 0zm4.875-1.125a1.125 1.125 0 100 2.25 1.125 1.125 0 000-2.25z" clip-rule="evenodd" />
+                  </svg>
+                  <h4>s'elancer vers la messagerie</h4>
+                </div>
+                <div class="DetailInfo flex">
+                  <h4>A la commande</h4>
+                </div>
+              </div>
+      </div> 
+      <div class="locationPopop flex">
+        <div class="contenuImage flex">
+          <p>images/videos</p>
+          <div class="defilment"></div>
+          <div class="defilment" onclick="defilement(event)"></div>
+        </div>
+          <div class="contenuDetail flex">
+            <div class="DetailPartie flex" style="justify-content: right;align-items: end;">
+              <svg style="width: 30px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fbfbfc" class="w-6 h-6">
+                <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z" clip-rule="evenodd" />
+             </svg>
+            </div>
+            <div class="DetailPartie flex">
+              <h4>Adresse</h4>
+              <h4 style="color: var(--noire); font-weight: 500;">kamenge</h4>
+            </div>
+            <div class="DetailPartie flex">
+              <h4>Prix</h4>
+              <h4 style="color: var(--noire); font-weight: 500;">200$ USD par mois</h4>
+            </div>
+            <div class="DetailPartie flex">
+              <h4>Categorie</h4>
+              <h4 style="color: var(--noire); font-weight: 500;">3 chambres</h4>
+            </div>
+            <div class="DetailPartiePlus">
+              <h4>j'ai une maison de 3 chambres bouble salon,trois douches et toillettes, double veranda,en cloture meme,avec du courage et de l'eau stable</h4>
+            </div>
+            <div class="DetailInfo flex" style="background-color: var(--color-contour-secondaire);">
+              <input type="text" name="" id="" value="la maison est-elle disponible?">
+              <svg id="voice1" style="width: 25px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fbfbfc" class="w-6 h-6">
+                  <path d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z" />
+              </svg>
+            </div>
+            <div class="DetailInfo flex">
+              <svg style="width: 23px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fbfbfc" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M4.804 21.644A6.707 6.707 0 006 21.75a6.721 6.721 0 003.583-1.029c.774.182 1.584.279 2.417.279 5.322 0 9.75-3.97 9.75-9 0-5.03-4.428-9-9.75-9s-9.75 3.97-9.75 9c0 2.409 1.025 4.587 2.674 6.192.232.226.277.428.254.543a3.73 3.73 0 01-.814 1.686.75.75 0 00.44 1.223zM8.25 10.875a1.125 1.125 0 100 2.25 1.125 1.125 0 000-2.25zM10.875 12a1.125 1.125 0 112.25 0 1.125 1.125 0 01-2.25 0zm4.875-1.125a1.125 1.125 0 100 2.25 1.125 1.125 0 000-2.25z" clip-rule="evenodd" />
+              </svg>
+              <h4>s'elancer vers la messagerie</h4>
+            </div>
+            <div class="DetailInfo flex">
+              <h4>A la commande</h4>
+            </div>
+          </div>
+  </div>
+  <div class="locationPopop flex">
+    <div class="contenuImage flex">
+      <p>images/videos</p>
+      <div class="defilment"></div>
+      <div class="defilment" onclick="defilement(event)"></div>
+    </div>
+      <div class="contenuDetail flex">
+        <div class="DetailPartie flex" style="justify-content: right;align-items: end;">
+          <svg style="width: 30px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fbfbfc" class="w-6 h-6">
+            <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z" clip-rule="evenodd" />
+         </svg>
+        </div>
+        <div class="DetailPartie flex">
+          <h4>Adresse</h4>
+          <h4 style="color: var(--noire); font-weight: 500;">kamenge</h4>
+        </div>
+        <div class="DetailPartie flex">
+          <h4>Prix</h4>
+          <h4 style="color: var(--noire); font-weight: 500;">200$ USD par mois</h4>
+        </div>
+        <div class="DetailPartie flex">
+          <h4>Categorie</h4>
+          <h4 style="color: var(--noire); font-weight: 500;">3 chambres</h4>
+        </div>
+        <div class="DetailPartiePlus">
+          <h4>j'ai une maison de 3 chambres bouble salon,trois douches et toillettes, double veranda,en cloture meme,avec du courage et de l'eau stable</h4>
+        </div>
+        <div class="DetailInfo flex" style="background-color: var(--color-contour-secondaire);">
+          <input type="text" name="" id="" value="la maison est-elle disponible?">
+          <svg id="voice1" style="width: 25px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fbfbfc" class="w-6 h-6">
+              <path d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z" />
+          </svg>
+        </div>
+        <div class="DetailInfo flex">
+          <svg style="width: 23px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fbfbfc" class="w-6 h-6">
+              <path fill-rule="evenodd" d="M4.804 21.644A6.707 6.707 0 006 21.75a6.721 6.721 0 003.583-1.029c.774.182 1.584.279 2.417.279 5.322 0 9.75-3.97 9.75-9 0-5.03-4.428-9-9.75-9s-9.75 3.97-9.75 9c0 2.409 1.025 4.587 2.674 6.192.232.226.277.428.254.543a3.73 3.73 0 01-.814 1.686.75.75 0 00.44 1.223zM8.25 10.875a1.125 1.125 0 100 2.25 1.125 1.125 0 000-2.25zM10.875 12a1.125 1.125 0 112.25 0 1.125 1.125 0 01-2.25 0zm4.875-1.125a1.125 1.125 0 100 2.25 1.125 1.125 0 000-2.25z" clip-rule="evenodd" />
+          </svg>
+          <h4>s'elancer vers la messagerie</h4>
+        </div>
+        <div class="DetailInfo flex">
+          <h4>A la commande</h4>
+        </div>
+      </div>
+</div>
+       </div>
+        
+    </div>
+    <script src="./script.js"></script>
+    <script>
+    function defilement(event){
+        var con =document.querySelector(".con.flex");
+        con.scrollLeft += 10;
+    }
+    </script>
+</body>
+</html>

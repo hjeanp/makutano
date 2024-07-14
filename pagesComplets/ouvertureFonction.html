@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ouvertureFonction</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" async="async" src="https://platform-api.sharethis.com/js/sharethis.js#property=VOTRE_ID_DE_PROPRIÉTÉ&product=sop" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../stylesComplets/ouverture.css">
+    <link rel="stylesheet" href="../stylesComplets/stylesConfig.css">
+</head>
+<body>
+    <div class="contener_svg">
+        <svg class="flex">
+            <circle class="cercle_principale_externe " cx='50%' cy='50%' r="18%"></circle>
+            <circle class="cercle_principale_interne" id="grand" cx='50%' cy='50%' r="135px"></circle>
+
+            <path d="M30,210 L300,120 L500,120" stroke="red"></path>
+            <path>.</path>
+            <path>.</path>
+    
+            <path></path>
+            <path></path>
+            <path></path>
+<!--____________________petit boules service!*s___________________________________________--> 
+        
+            <circle class="petit-cercle" cx='24%' cy='20.37%' r="74px" />
+            <circle class="petit-cercle_interne" cx='24%' cy='20.37%' r="65px" stroke-width="10px"></circle>
+        
+            <circle class="petit-cercle" cx='16.5%' cy='45%' r="74px"></circle>
+            <circle class="petit-cercle_interne" cx='16.5%' cy='45%' r="65px" stroke-width="10px"></circle>
+
+            <circle class="petit-cercle" cx='24%' cy='76.7%' r="74px"></circle>
+            <circle class="petit-cercle_interne" cx='24%' cy='76.7%' r="65px" stroke-width="10px"></circle>
+
+            <circle class="petit-cercle" cx='76%' cy='20.37%' r="74px"></circle>
+            <circle class="petit-cercle_interne" cx='76%' cy='20.37%' r="65px" stroke-width="10px"></circle>
+
+            <circle class="petit-cercle" cx='83.5%' cy='45%' r="74px"></circle>
+            <circle class="petit-cercle_interne" cx='83.5%' cy='45%' r="65px" stroke-width="10px"></circle>
+
+            <circle class="petit-cercle" cx='76%' cy='76.7%' r="74px"></circle>
+            <circle class="petit-cercle_interne" cx='76%' cy='76.7%' r="65px" stroke-width="10px"></circle>
+
+<!--____________________pminisculesercle boules debut chemin___________________________________________-->
+
+            <circle class="minuscule_cercle" cx='41.5%' cy='30.55%' r="10px"></circle>
+            <circle class="minuscule_cercle" cx='37.5%' cy='49%' r="10px"></circle>
+            <circle class="minuscule_cercle" cx='41.5%' cy='69.45%' r="10px" ></circle>
+
+            <circle class="minuscule_cercle" cx='58.5%' cy='30.55%' r="10px"></circle>
+            <circle class="minuscule_cercle" cx='62.5%' cy='49%' r="10px"></circle>
+            <circle class="minuscule_cercle" cx='58.5%' cy='69.45%' r="10px"></circle>
+    
+        </svg> 
+    </div>
+    <div id="generale">
+    <div class="texte_content flex" onclick="affiche_service_cercle(event)">
+        <div class="text_principal flex">
+            <h3>services</h2>
+        </div>
+    </div>
+    <div  class="services_content service1 flex" onmouseenter="voir(event)" onmouseleave="npsvoir(event)">
+            <a href="acceuilprincipale.html"><i class="fa-solid fa-house"></i></a>
+            <div class="nom flex"><h5>Accueil</h5></div>
+    </div>
+    <div  class="services_content service2 flex" onmouseenter="voir(event)" onmouseleave="npsvoir(event)">
+            <a href="MarchePublic.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <div class="nom flex"><h5>MarketPlace</h5></div>
+    </div>
+    <div class="services_content service3 flex" onmouseenter="voir(event)" onmouseleave="npsvoir(event)">
+            <a href="OutilOcasion.html"><i class="fa-solid fa-toolbox"></i></a>
+            <div class="nom flex"><h5>Outil_Occasion</h5></div>
+    </div>
+    <div class="services_content service4 flex" onmouseenter="voir(event)" onmouseleave="npsvoir(event)">
+            <a href="LocationM.html"><i class="fa-solid fa-house-chimney-user"></i></a>
+            <div class="nom flex"><h5>Location_Maison</h5></div>
+    </div>
+    <div class="services_content service5 flex" onmouseenter="voir(event)" onmouseleave="npsvoir(event)">
+            <i class="fa-solid fa-handshake-angle"></i>
+            <div class="nom flex"><h5>Aide</h5></div>
+    </div>
+    <div class="services_content service6 flex" onmouseenter="voir(event)" onmouseleave="npsvoir(event)">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <div class="nom flex"><h5>Projet</h5></div>
+    </div>
+</div>
+  <script src="./script.js"></script>
+</body>
+</html>

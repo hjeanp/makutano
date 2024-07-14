@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login up</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" async="async" src="https://platform-api.sharethis.com/js/sharethis.js#property=VOTRE_ID_DE_PROPRIÉTÉ&product=sop" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../stylesComplets/stylesConfig.css">
+    <link rel="stylesheet" href="../stylesComplets/styles.css">
+</head>
+<style>
+    .container.flex{
+        gap: 1px;
+        padding: 10px;
+    }
+    .loginUp.flex{
+        width: 40%;
+        height: 89vh;
+        background-color: var(--color-contour-principale);
+        flex-direction: column;
+        position: relative;
+    }
+    .login.flex{
+        width: 40%;
+        height: 89vh;
+        background-color: var(--color-contour-principale);
+    }
+    .titre{
+        width: 40%;
+        height: 50px;
+        background-color: var(--color-contour-secondaire);
+        position: absolute;
+        top: -10px;
+    }
+    form{
+        width: 100%;
+        height: 90%;
+        margin-top: 40px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        gap: 10px;
+    }
+    .champ.flex{
+        width: 99%;
+        height:48px;
+    }
+    .champ input{
+        width: 90%;
+        height: 100%;
+        padding: 0px 5px;
+        background-color: var(--color-contour-principale);
+        border: 1px solid var(--color-text);
+        border-radius:0px 2px 2px 0px ;
+        outline: none;
+        color: var(--color-text);
+    }
+    input::placeholder{
+        color: var(--color-text);
+    }
+    .champ input[type="submit"]{
+        width: 99%;
+        height: 100%;
+        padding: 0px 5px;
+        font-size: 19px;
+        background-color:var(--color-contour-secondaire);
+        border-radius: 3px;
+        cursor: pointer;
+        outline: none;
+        border: none;
+    }
+    .champ .champIcon{
+        width: 10%;
+        height: 100%;
+        background-color:var(--color-text);
+        border-right: 2px solid var(--color-text);
+    }
+    .champ .champSelect{
+        width: 20%;
+        height: 100%;
+    }
+    .champSelect select{
+        width: 100%;
+        height: 100%;
+        background-color: var(--color-contour-principale);
+        border: 1px solid var(--color-text);
+        outline: none;
+        color: var(--color-text);
+    }
+</style>
+<body>
+    <div class="container flex">
+        <div class="login flex">
+        </div>
+        <div class="loginUp flex">
+            <div class="titre flex"><h2>Login Up</h2></div>
+            <form action="">
+               <div class="champ flex">
+                <div class="champIcon flex">
+                    <svg style="width: 30px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#2f3d4a" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z" clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <input type="text" name="" id="" placeholder="mane...">
+               </div>
+               <div class="champ flex">
+                <div class="champIcon flex">
+                    <svg style="width: 30px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#2f3d4a" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z" clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <input type="text" name="" id="" placeholder="last Name....">
+               </div>
+               <div class="champ flex">
+                <div class="champIcon flex">
+                    <svg style="width: 30px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#2f3d4a" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z" clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <div class="champSelect flex">
+                    <select name="" id="">
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">7</option>
+                        <option value="">8</option>
+                        <option value="">9</option>
+                        <option value="">10</option>
+                        <option value="">11</option>
+                        <option value="">12</option>
+                        <option value="">13</option>
+                        <option value="">14</option>
+                        <option value="">16</option>
+                        <option value="">17</option>
+                        <option value="">18</option>
+                        <option value="">19</option>
+                        <option value="">20</option>
+                        <option value="">21</option>
+                        <option value="">22</option>
+                        <option value="">23</option>
+                        <option value="">24</option>
+                        <option value="">25</option>
+                        <option value="">26</option>
+                        <option value="">27</option>
+                        <option value="">28</option>
+                        <option value="">29</option>
+                        <option value="">30</option>
+                        <option value="">31</option>
+                    </select>
+                </div>
+                <div class="champSelect flex" style="width:30%;">
+                    <select name="" id="">
+                        <option value="">janvier</option>
+                        <option value="">fevier</option>
+                        <option value="">mars</option>
+                        <option value="">avril</option>
+                        <option value="">mai</option>
+                        <option value="">juin</option>
+                        <option value="">juillet</option>
+                        <option value="">out</option>
+                        <option value="">septembre</option>
+                        <option value="">octombre</option>
+                        <option value="">novembre</option>
+                        <option value="">decembre</option>
+                    </select>
+                </div>
+                <div class="champSelect flex" style="width: 43%;">
+                    <select name="" id="">
+                        <option value="">2005</option>
+                        <option value="">2004</option>
+                        <option value="">2003</option>
+                        <option value="">2002</option>
+                        <option value="">2001</option>
+                        <option value="">2000</option>
+                        <option value="">1999</option>
+                        <option value="">1998</option>
+                        <option value="">1997</option>
+                        <option value="">1995</option>
+                        <option value="">1994</option>
+                        <option value="">1993</option>
+                        <option value="">1992</option>
+                        <option value="">1991</option>
+                        <option value="">1990</option>
+                    </select>
+                </div>
+               </div>
+               <div class="champ flex">
+                <div class="champIcon flex">
+                    <svg style="width: 30px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2f3d4a" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                    </svg>
+                </div>
+                <div class="champSelect flex">
+                    <select name="" id="">
+                        <option value="">+1</option>
+                        <option value="">+234</option>
+                        <option value="">+243</option>
+                        <option value="">+257</option>
+                        <option value="">+250</option>
+                        <option value="">+256</option>
+                    </select>
+                </div>
+                <input type="number" name="" id="" placeholder="number...." style="outline: none;width:74%;">
+               </div>
+               <div class="champ flex">
+                <div class="champIcon flex">
+                    <svg style="width: 30px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#2f3d4a" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z" clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <input type="password" name="" id="" placeholder="password......" style="width: 83%;">
+                <div class="champIcon flex" style="border-left:3px solid var(--color-text);border-right:none;">
+                    <svg style="width: 30px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#2f3d4a" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z" clip-rule="evenodd" />
+                    </svg>
+                </div>
+               </div>
+               <div class="champ flex">
+                <div class="champIcon flex">
+                    <svg style="width: 30px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#2f3d4a" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z" clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <input type="password" name="" id="" placeholder="password confirm......." style="width: 83%;">
+                <div class="champIcon flex" style="border-left:3px solid var(--color-text);border-right:none;">
+                    <svg style="width: 30px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#2f3d4a" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z" clip-rule="evenodd" />
+                    </svg>
+                </div>
+               </div>
+               <div class="champ flex">
+                <div class="champIcon flex">
+                    <svg style="width: 30px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#2f3d4a" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z" clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <input type="email" name="" id="" placeholder="email...">
+               </div>
+               <div class="champ flex">
+                <input type="submit" value="login up">
+               </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
